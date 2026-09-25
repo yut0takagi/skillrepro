@@ -1,0 +1,4 @@
+node_modules/
+dist/
+.skillrepro/
+skill.local.yaml
