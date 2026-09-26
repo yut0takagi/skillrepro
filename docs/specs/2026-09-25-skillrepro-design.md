@@ -90,7 +90,7 @@ evals:                    # 評価（4.4）
 | `call` | 引数を固定して MCP を呼ぶ。`{capability, args}` |
 | `ask` | ユーザーに質問する。`{question, choices?}`。`choices` が無ければ自由記述 |
 | `dispatch` | subagent に委譲する。`{agent, inputs, outputs}` |
-| `loop` | 繰り返す。`{max, until, steps, on_exhausted}` |
+| `loop` | 繰り返す。`{max, until, steps, on_exhausted}`。`on_exhausted` は抜けられなかったときに行う step（name / description を持つ） |
 | `foreach` | 集合の要素ごとに実行する。`{over, as, steps}` |
 | `parallel` | 同時に実行すべき step の束。値は step のリスト |
 | `decide` | 多分岐の行き先を決める。`{cases: [{description, goto}]}` |
